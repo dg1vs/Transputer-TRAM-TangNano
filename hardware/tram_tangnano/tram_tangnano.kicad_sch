@@ -4140,7 +4140,7 @@
 		)
 		(uuid "a4428c84-40cc-4de9-ad4a-4655bbc8a616")
 	)
-	(text "Old!\nTRAM		TangNano	T805	T425 \n-------------------------------------------\nLink0		Link0		Link0\nLink1		Link1		Link2\nLink2		Link3				Link0\nLink3		Link4				Link1\n\n			Link2		Link3			Lötpunkte\n			Link5				Link2	Lötpunkte"
+	(text "Old! \nTRAM		TangNano	T805	T425 \n-------------------------------------------\nLink0		Link0		Link0\nLink1		Link1		Link2\nLink2		Link3				Link0\nLink3		Link4				Link1\n\n			Link2		Link3			Lötpunkte\n			Link5				Link2	Lötpunkte"
 		(exclude_from_sim no)
 		(at 210.82 149.86 0)
 		(effects
