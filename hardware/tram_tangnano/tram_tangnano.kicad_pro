@@ -573,7 +573,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "Output",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -721,7 +721,7 @@
           "group_by": true,
           "label": "LCSC",
           "name": "LCSC",
-          "show": false
+          "show": true
         }
       ],
       "filter_string": "",
@@ -812,7 +812,7 @@
         "uuid": "37851e2b-0c2b-4069-a69e-94e84a798120"
       }
     ],
-    "used_designators": "",
+    "used_designators": "C54,J5",
     "variants": []
   },
   "sheets": [

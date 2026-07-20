@@ -1,0 +1,46 @@
+Neue Variante TangNano Standalone Linkbelegung
+28.05.2026 A.Saischowa
+
+Diese Belegung orientiert sich an der ATW800/2 und soll sicherstellen, das der  ATW800-Transputer 
+bei gesteckten TRAM im Slot1 mit TangNano20k Standalone als erstes den T805 sieht, da dieser Zugriff auf 
+alle HW-Register für HDMI/I2S hat. Bei einem weiteren Tram im Slot 2 (tangnano,T805) ist auch der T805 
+der erste in der Kette.
+
+         NotResetIn      IOT40A 73   USB        +5V
+         NotAnalyseIn    IOT34B 74              GND
+         NotErrorOut     IOT34A 75           76 IOT30B   EventWaiting
+                         IOT4B  85           80 IOT26A
+                         IOT30A 77           42 IOB42B   ExtLink3Out       T4_L0Out
+         LED0            IOL47A 15           41 IOB43A   ExtLink3In        T4_L0In
+         LED1            IOL47B 16           56 IOR36A   I2S_BCLK Audio 
+T8_L0In  ExtLink0In      IOB8A  27           54 IOR38A   I2S_DIN  Audio 
+T8_L0Out ExtLink0Out     IOB8B  28           51 IOR45A   PA_EN    Audio 
+T8_L2In  ExtLink1In      IOB6A  25           48 IOR49B   ExtLink4In        T8_L3In
+T8_L2Out ExtLink1Out     IOB6B  26           55 IOR36B   I2S_LRCK Audio
+T4_L1In  ExtLink2In      IOB14A 29           49 IOR49A   ExtLink4Out       T8_L3Out
+T4_L1Out ExtLink2Out     IOB14B 30           86 IOT4A    EventAck
+         EventReq        IOB29A 31           79 IOT27B   WS2812 LED
+         LED2            IOL49A 17              GND
+         LED5            IOL51B 20              3V3
+         LED4            IOL51A 19           72 IOT40B   ExtLink5In        T4_L2In 
+         LED3            IOL49B 18           71 IOT40A   ExtLink5Out       T4_L2Out  
+                              3V3            53 IOR38B
+                              GND   HDMI     52 IOR39A
+
+Am TRAM liegen dann die Links wie folgt  
+
+Tram0In     T8_L0In
+Tram0Out    T8_L0Out
+Tram1In     T8_L2In
+Tram1Out    T8_L2Out   
+Tram2In     T4_L0In
+Tram2Out    T4_L0Out
+Tram3In     T8_L3In
+Tram3Out    T8_L3Out     
+
+Lötpkt      T4_L1In
+Lötpkt      T4_L1Out
+Lötpkt      T4_L2In
+Lötpkt      T4_L2Out
+
+Intern sind T805 L1 <> T425 L3 verbunden

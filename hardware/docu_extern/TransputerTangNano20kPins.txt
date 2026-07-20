@@ -1,0 +1,28 @@
+
+NotResetIn      IOT40A 73   USB        +5V
+NotAnalyseIn    IOT34B 74              GND
+NotErrorOut     IOT34A 75           76 IOT30B	EventWaiting
+                IOT4B  85           80 IOT26A
+                IOT30A 77           42 IOB42B   ExtLink3Out
+LED0            IOL47A 15           41 IOB43A   ExtLink3In
+LED1            IOL47B 16           56 IOR36A   I2S_BCLK Audio 
+ExtLink0In      IOB8A  27           54 IOR38A   I2S_DIN  Audio 
+ExtLink0Out     IOB8B  28           51 IOR45A   PA_EN    Audio 
+ExtLink1In      IOB6A  25           48 IOR49B   ExtLink4In
+ExtLink1Out     IOB6B  26           55 IOR36B   I2S_LRCK Audio
+ExtLink2In      IOB14A 29           49 IOR49A   ExtLink4Out
+ExtLink2Out     IOB14B 30           86 IOT4A    EventAck
+EventReq        IOB29A 31           79 IOT27B   WS2812 LED
+LED2            IOL49A 17              GND
+LED5            IOL51B 20              3V3
+LED4            IOL51A 19           72 IOT40B   ExtLink5In
+LED3            IOL49B 18           71 IOT40A   ExtLink5Out
+                   3V3              53 IOR38B
+                   GND      HDMI    52 IOR39A
+
+HDMI 35,36 37,38 39,40 33,34
+Button 87
+Reset 88
+sysclk 4
+UartTX 69
+UartRX 70
