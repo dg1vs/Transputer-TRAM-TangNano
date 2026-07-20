@@ -1,6 +1,12 @@
 # For PCBs designed using KiCad: https://www.kicad.org/
 # Format documentation: https://kicad.org/help/file-formats/
 
+Backup
+Output
+production
+
+
+
 # Temporary files
 *.000
 *.bak
