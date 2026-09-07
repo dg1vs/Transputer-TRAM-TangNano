@@ -1,5 +1,9 @@
 # Changelog
 
+## August 2026 Version 0.2
+* More pin (e.g. sound)
+* Just works
+
 ## May 2026 Version 0.1
 First version of TangNano TRAM
 See pictures

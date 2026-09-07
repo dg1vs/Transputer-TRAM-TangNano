@@ -4430,7 +4430,7 @@
 	)
 	(text "NotAnalyse"
 		(exclude_from_sim no)
-		(at 101.092 145.542 0)
+		(at 100.584 145.288 0)
 		(effects
 			(font
 				(size 1.27 1.27)

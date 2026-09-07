@@ -2097,7 +2097,7 @@
 			)
 		)
 		(property "Value" "Conn_Event"
-			(at 2.21 2.4046 0)
+			(at 2.21 2.5946 0)
 			(layer "F.Fab")
 			(uuid "dc255207-8b59-4141-b9c6-d91211dd9d5a")
 			(effects
