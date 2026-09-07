@@ -1,5 +1,7 @@
 # Transputer-TRAM-TangNano
 
+![Transputer-TRAM-TangNano V02](docs/TRAM-TangNano.jpeg)
+
 A **TRAM-size FPGA Transputer module** based on the **Sipeed Tang Nano 20K**.
 
 The goal of this project is to provide a modern, compact Transputer module which can be used in systems designed for classic INMOS TRAMs, while replacing most of the increasingly difficult-to-obtain historical hardware with an FPGA implementation.
@@ -181,3 +183,4 @@ A useful technical background reference for implementing the Transputer architec
 
 
 
+![A monster setup with the first version](docs/Frankenstein-Setup.jpeg)
